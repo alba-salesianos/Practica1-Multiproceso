@@ -30,4 +30,17 @@ public class Utils {
         return stringBuilder.toString();
     }
 
+    public static Integer getTotalOfVowels(String fileRoute) {
+        try {
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(fileRoute));
+            String firsLine = bufferedReader.readLine();
+            bufferedReader.close();
+            return Integer.parseInt(firsLine);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return 0;
+    }
+
 }
