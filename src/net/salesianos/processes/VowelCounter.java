@@ -7,7 +7,6 @@ public class VowelCounter {
 
 
         int repetitionOfVowel = 0;
-        System.out.println(vowel);
 
         for (int i = 0; i < text.length(); i++) {
             String c = String.valueOf(text.charAt(i));
