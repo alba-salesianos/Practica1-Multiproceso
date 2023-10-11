@@ -16,7 +16,7 @@ public class ProcessLauncher {
         try {
             File outputFile = new File(OUTPUT_ROUTE + fileName);
             processBuilder.redirectOutput(outputFile);
-            javaProcess =  processBuilder.start();
+            javaProcess = processBuilder.start();
         } catch (IOException e) {
             e.printStackTrace();
         }
