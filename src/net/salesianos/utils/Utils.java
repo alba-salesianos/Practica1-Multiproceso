@@ -13,7 +13,6 @@ public class Utils {
         try {
             BufferedReader bufferedReader = new BufferedReader(new FileReader(fileRoute));
 
-
             String ls = System.getProperty("line.separator");
 
             while ((text = bufferedReader.readLine()) != null) {
